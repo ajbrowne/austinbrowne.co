@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MTG Search - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="../dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="../dist/css/jumbotron-narrow.css" rel="stylesheet">
+  <style>
+    body{
+      font-weight: 200;
+    }
+    form{
+      font-weight:200;
+    }
+    #header{
+      background: #ffffff;
+      font-weight:200;
+    }
+    #header h3{
+      font-weight:200;
+    }
+    #huge{
+      font-size: 96px;
+      font-weight: 100;
+      padding-top: 10%;
+      padding-bottom: 5%;
+      margin-bottom: 0px;
+    }
+    #kinda-huge{
+      font-size: 40px;
+      font-weight: 100;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      margin-bottom: 0px;
+    }
+    #insult{
+      padding-left: 40px;
+    }
+    p tagline{
+      padding-top:0px;
+      margin-top: 0px;
+      color: #aaaaaa;
+    }
+    #excelDataTable{
+      width:100%;
+    }
+
+    #love button h1{
+      color: #000000;
+      font-weight: 100;
+      font-size: 180px;
+    }
+
+
+
+    #hate button h1{
+      color: #000000;
+      font-weight: 100;
+      font-size: 180px;
+    }
+
+    footer{
+      position:fixed;
+      bottom:0px;
+      width:100%;
+      padding-bottom: 10px;
+    }
+    #pic{
+      width: 50%;
+      height: 50%;
+      padding-top: 10%;
+    }
+     #white1{
+      background-color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    #white2{
+      background-color: white;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-bottom: 8%;
+    }
+    #top{
+      padding-top: 2%;
+      color: #000000
+    }
+  </style>
+  
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="../dist/js/bootstrap.min.js"></script>
+  <script src="../dist/js/test.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+  <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+  <script type="text/javascript" src="./add.js"></script>
+</head>
+
+<div class="container" id="white1">
+  <div class="header">
+    <ul class="nav nav-pills pull-right" id="top">
+      <li class="active"><a href="./add.html">Search</a></li>
+      <li><a href="./about.html"><FONT COLOR="000000">About</FONT></a></li>
+    </ul>
+    <h3 id="top" class="text-muted" style:"weight:200;">MTG Search</h3>
+  </div>
+</div>
+</div>
+<body background="background.png">
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Card Search Error</h4>
+      </div>
+      <div class="modal-body" >
+        <p id="modalBody">Please Enter a Card Name</p>
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+        <button type="button" class="btn btn-primary"  id="continue" onclick="forward()" data-dismiss="modal">Continue</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  <div class="container" id="white2">
+    <center>
+      <h1 id="kinda-huge">Search for a Card</h1>
+      <form class="form-signin" role="form" style="font-weight:200; width:35%;">
+      <input type="text" class="form-control" placeholder="Enter Card Name" id="name" onkeydown="if (event.keyCode == 13)  nameSearch()" required autofocus></input>
+        <button class="btn btn-lg btn-default btn-block" type="button" id="sign" onClick="nameSearch()" style="font-weight: 200;" data-toggle="modal" data-target="#myModal">Find Card</button>
+      </form>
+    </center>
+  </div>
+</body>
+<!-- <footer style="background-color: #ffffff">
+  <center>
+   <a>MSearch</a>
+   <br><small><font color=#8f8f8f>Find what you need here.</font></small>
+ </center>
+</footer> -->
+</html>
