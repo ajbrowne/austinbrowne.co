@@ -8,14 +8,15 @@ var one, two, three, four, five, six, seven, eight, nine, ten, eleven;
 
 function cardSearch(){
   var input = sessionStorage.getItem('card');
+  alert(input);
   var l_input = sessionStorage.getItem('card').toLowerCase();
   $.getJSON('AllSets-x.json', function (data) {
+    alert('got');
     $.each(data, function (index, value){
      var cards = data[index].cards;
      $.each(cards, function (ind, value){
       var name = cards[ind].name;
       var l_name = cards[ind].name.toLowerCase();
-      alert('lololololol');
       if (name.toLowerCase() == input.toLowerCase()){
         check = true;
         var printings = cards[ind].printings[0];
