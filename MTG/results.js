@@ -4,7 +4,8 @@ var price = 'http://magictcgprices.appspot.com/api/tcgplayer/price.json?cardname
 var low;
 var med;
 var high;
-var one, two, three, four, five, six, seven, eight, nine, ten, eleven;
+var one, two, three, four, five, six, seven, eight, nine, ten, eleven; \
+var url;
 
 function cardSearch(){
   var input = sessionStorage.getItem('card');
@@ -21,7 +22,7 @@ function cardSearch(){
         for (var i = 1; i < cards[ind].printings.length; i++){
           printings += '/' + cards[ind].printings[i];
         }
-        var url = "http://mtgimage.com/card/";
+        url = "http://mtgimage.com/card/";
         var img = input.replace(' ', '%20');
         var buy = input.replace(' ', '+');
         tcg += buy;
