@@ -4,8 +4,10 @@ var price = 'http://magictcgprices.appspot.com/api/tcgplayer/price.json?cardname
 var low;
 var med;
 var high;
+var one, two, three, four, five, six, seven, eight, nine, ten, eleven;
 
 function cardSearch(){
+  alert("llolol");
   var input = sessionStorage.getItem('card');
   var l_input = sessionStorage.getItem('card').toLowerCase();
   $.getJSON('AllSets-x.json', function (data) {
@@ -35,40 +37,48 @@ function cardSearch(){
         url = url + img;
         var pt = cards[ind].power + '/' + cards[ind].toughness;
         document.getElementById('pic').src = url;
+        one = url;
         document.getElementById('name').innerHTML += cards[ind].name;
+        two = cards[ind].name;
         document.getElementById('card name').innerHTML += cards[ind].name;
+        three = cards[ind].name;
         document.getElementById('type').innerHTML += type;
+        four = type;
         document.getElementById('ctext').innerHTML += cards[ind].text
+        five = cards[ind].text;
         document.getElementById('expac').innerHTML += printings;
+        six = printings;
         document.getElementById('rarity').innerHTML += cards[ind].rarity;
+        seven = cards[ind].rarity;
         document.getElementById('artist').innerHTML += cards[ind].artist;
+        eight = cards[ind].artist;
         document.getElementById('buy').href = tcg;
-        document.getElementById('pic').style.visibility = 'visible';
-        document.getElementById('name').style.visibility = 'visible';
-        document.getElementById('card name').style.visibility = 'visible';
-        document.getElementById('type').style.visibility = 'visible';
-        document.getElementById('ctext').style.visibility = 'visible';
-        document.getElementById('flavor').style.visibility = 'visible';
-        document.getElementById('expac').style.visibility = 'visible';
-        document.getElementById('rarity').style.visibility = 'visible';
-        document.getElementById('artist').style.visibility = 'visible';
+        // document.getElementById('pic').style.visibility = 'visible';
+        // document.getElementById('name').style.visibility = 'visible';
+        // document.getElementById('card name').style.visibility = 'visible';
+        // document.getElementById('type').style.visibility = 'visible';
+        // document.getElementById('ctext').style.visibility = 'visible';
+        // document.getElementById('flavor').style.visibility = 'visible';
+        // document.getElementById('expac').style.visibility = 'visible';
+        // document.getElementById('rarity').style.visibility = 'visible';
+        // document.getElementById('artist').style.visibility = 'visible';
         if (cards[ind].flavor != null){
          var flavor = cards[ind].flavor;
          flavor = flavor.italics(); 
          document.getElementById('flavor').innerHTML += flavor;
-         document.getElementById('flavor').style.visibility = 'visible';
+         // document.getElementById('flavor').style.visibility = 'visible';
        } else{
         document.getElementById('flavor').remove();
       }
       if (cards[ind].cmc != null){
        document.getElementById('cmc').innerHTML += cards[ind].cmc;
-       document.getElementById('cmc').style.visibility = 'visible';
+       // document.getElementById('cmc').style.visibility = 'visible';
      } else{
       document.getElementById('cmc').remove();
     }
     if (type.indexOf(creature) != -1){
      document.getElementById('pt').innerHTML += pt;
-     document.getElementById('pt').style.visibility = 'visible';
+     // document.getElementById('pt').style.visibility = 'visible';
    } else{
     document.getElementById('pt').remove();
   }
