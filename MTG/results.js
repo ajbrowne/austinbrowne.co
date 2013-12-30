@@ -15,8 +15,8 @@ function cardSearch(){
      $.each(cards, function (ind, value){
       var name = cards[ind].name;
       var l_name = cards[ind].name.toLowerCase();
+      alert('lololololol');
       if (name.toLowerCase() == input.toLowerCase()){
-        alert('lololol');
         check = true;
         var printings = cards[ind].printings[0];
         for (var i = 1; i < cards[ind].printings.length; i++){
