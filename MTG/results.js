@@ -8,10 +8,8 @@ var one, two, three, four, five, six, seven, eight, nine, ten, eleven;
 
 function cardSearch(){
   var input = sessionStorage.getItem('card');
-  alert(input);
   var l_input = sessionStorage.getItem('card').toLowerCase();
   $.getJSON('AllSets-x.json', function (data) {
-    alert('got');
     $.each(data, function (index, value){
      var cards = data[index].cards;
      $.each(cards, function (ind, value){
@@ -88,9 +86,10 @@ function cardSearch(){
 });
 });
 if (check == false){
-    $('#myModal').modal('show');
-  }
+  $('#myModal').modal('show');
+}
 });
+document.getElementById('pic').src = url;
 }
 
 function forward(){
