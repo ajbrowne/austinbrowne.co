@@ -4,7 +4,7 @@ var price = 'http://magictcgprices.appspot.com/api/tcgplayer/price.json?cardname
 var low;
 var med;
 var high;
-var one, two, three, four, five, six, seven, eight, nine, ten, eleven; \
+var one, two, three, four, five, six, seven, eight, nine, ten, eleven; 
 var url;
 
 function cardSearch(){
