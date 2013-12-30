@@ -7,7 +7,6 @@ var high;
 var one, two, three, four, five, six, seven, eight, nine, ten, eleven;
 
 function cardSearch(){
-  alert("llolol");
   var input = sessionStorage.getItem('card');
   var l_input = sessionStorage.getItem('card').toLowerCase();
   $.getJSON('AllSets-x.json', function (data) {
@@ -17,6 +16,7 @@ function cardSearch(){
       var name = cards[ind].name;
       var l_name = cards[ind].name.toLowerCase();
       if (name.toLowerCase() == input.toLowerCase()){
+        alert('lololol');
         check = true;
         var printings = cards[ind].printings[0];
         for (var i = 1; i < cards[ind].printings.length; i++){
