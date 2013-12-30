@@ -36,61 +36,51 @@ function cardSearch(){
         img = img + '.jpg';
         url = url + img;
         var pt = cards[ind].power + '/' + cards[ind].toughness;
-        document.getElementById('pic').src = url;
         one = url;
-        document.getElementById('name').innerHTML += cards[ind].name;
         two = cards[ind].name;
-        document.getElementById('card name').innerHTML += cards[ind].name;
         three = cards[ind].name;
-        document.getElementById('type').innerHTML += type;
         four = type;
-        document.getElementById('ctext').innerHTML += cards[ind].text
         five = cards[ind].text;
-        document.getElementById('expac').innerHTML += printings;
         six = printings;
-        document.getElementById('rarity').innerHTML += cards[ind].rarity;
         seven = cards[ind].rarity;
-        document.getElementById('artist').innerHTML += cards[ind].artist;
         eight = cards[ind].artist;
-        document.getElementById('buy').href = tcg;
-        // document.getElementById('pic').style.visibility = 'visible';
-        // document.getElementById('name').style.visibility = 'visible';
-        // document.getElementById('card name').style.visibility = 'visible';
-        // document.getElementById('type').style.visibility = 'visible';
-        // document.getElementById('ctext').style.visibility = 'visible';
-        // document.getElementById('flavor').style.visibility = 'visible';
-        // document.getElementById('expac').style.visibility = 'visible';
-        // document.getElementById('rarity').style.visibility = 'visible';
-        // document.getElementById('artist').style.visibility = 'visible';
         if (cards[ind].flavor != null){
          var flavor = cards[ind].flavor;
          flavor = flavor.italics(); 
-         document.getElementById('flavor').innerHTML += flavor;
-         // document.getElementById('flavor').style.visibility = 'visible';
+         nine = flavor;
        } else{
         document.getElementById('flavor').remove();
       }
       if (cards[ind].cmc != null){
-       document.getElementById('cmc').innerHTML += cards[ind].cmc;
-       // document.getElementById('cmc').style.visibility = 'visible';
-     } else{
-      document.getElementById('cmc').remove();
+        ten = cards[ind].cmc;
+      } else{
+        document.getElementById('cmc').remove();
+      }
+      if (type.indexOf(creature) != -1){
+        eleven = pt;
+      } else{
+        document.getElementById('pt').remove();
+      }
+      input = 'wallawalla';
     }
-    if (type.indexOf(creature) != -1){
-     document.getElementById('pt').innerHTML += pt;
-     // document.getElementById('pt').style.visibility = 'visible';
-   } else{
-    document.getElementById('pt').remove();
-  }
-  input = 'wallawalla';
-}
-});
+  });
 });
 if (check == false){
   $('#myModal').modal('show');
 }
 });
-document.getElementById('pic').src = url;
+document.getElementById('pic').src = url;document.getElementById('pic').src = one;
+document.getElementById('name').innerHTML += two;
+document.getElementById('card name').innerHTML += three;
+document.getElementById('type').innerHTML += four;
+document.getElementById('ctext').innerHTML += five;
+document.getElementById('expac').innerHTML += six;
+document.getElementById('rarity').innerHTML += seven;
+document.getElementById('artist').innerHTML += eight;
+document.getElementById('buy').href = price;
+document.getElementById('flavor').innerHTML += nine;
+document.getElementById('cmc').innerHTML += ten;
+document.getElementById('pt').innerHTML += eleven;
 }
 
 function forward(){
