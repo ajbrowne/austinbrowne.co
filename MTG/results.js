@@ -11,7 +11,9 @@ function cardSearch(){
   var input = sessionStorage.getItem('card');
   var l_input = sessionStorage.getItem('card').toLowerCase();
   $.getJSON('AllSets-x.json', function (data) {
+    alert('gogo');
     $.each(data, function (index, value){
+      alert('bloblo');
      var cards = data[index].cards;
      $.each(cards, function (ind, value){
       var name = cards[ind].name;
