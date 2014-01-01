@@ -74,7 +74,7 @@
       padding-left: 3%;
     }
     .cardInfo{
-     /* visibility: hidden;*/
+      visibility: hidden;
       font-size: 100%;
       padding-left: 5%;
       padding-right: 5%;
@@ -104,13 +104,13 @@
     }
   </style>
   
+  <script type="text/javascript" src="./results.js"></script>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="../dist/js/bootstrap.min.js"></script>
   <script src="../dist/js/test.js"></script>
   <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
   <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
-  <script type="text/javascript" src="./results.js"></script>
   <script type="text/javascript">
     function logoutHome(){
       Parse.initialize("BnGiWDWDjLiOakfubnazWrs60ToHwgHy40lspsjt", "0xW4A6mq0vl0H29GaApu9xHu9MBaARcua2pB6Bur");
@@ -128,10 +128,10 @@
       <li class="active"><a href="./results.html">Results</a></li>
       <li><a href="./about.html"><FONT COLOR="000000">About</FONT></a></li>
     </ul>
-    <h3 id="top" class="text-muted" style:"weight:200;">MTG Search</h3>
+    <h3 id="top" class="text-muted" style="weight:200">MTG Search</h3>
   </div>
 </div>
-<body onload="cardSearch()" background="background.png">
+<body  onload="cardSearch()">
   <div class="modal fade" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -154,7 +154,7 @@
       <div class="panel-heading" id="name" style="font-weight: bold"></div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6">
-           <img id='pic' src=''></img>
+           <img id='pic' src='' style="visibility: hidden"></img>
          </div>
        <div id="panel" class="col-lg-6 col-md-6 col-sm-6">
          <div class="panel panel-default">
@@ -170,7 +170,6 @@
          </div>
        </div>
      </div>
-     <button onclick=cardSearch()>GO</button>
      <div class="panel-heading"><a id ="buy" href="">Buy from TCGPlayer</a><p id="price"></p></div>
    </div>
  </div>
