@@ -120,6 +120,7 @@ a.drop:hover{
 	width:535px;
 	float:right;
 	padding-right:5px;
+	display:block;
 }
 #container #col2outer{
 	width:780px;
@@ -172,11 +173,12 @@ a.drop:hover{
 }
 #foot{
 	text-align: center;
-	position: fixed;
 	bottom:0;
-	width:100%;
 	color:#fff;
 	font-size: 16px;
+	width:100%;
+	padding-top:40px;
+	padding-bottom: 0px;
 }
 html { 
 	background: url(back.jpg) no-repeat center center fixed ; 
@@ -249,9 +251,3 @@ html {
 .nav-container > ul > li > a {
 	line-height: 48px; 
 }
-
-
-.glyphicon-user:before {
-  content: "\e008";
-}
-
