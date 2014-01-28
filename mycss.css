@@ -175,6 +175,8 @@ a.drop:hover{
 	position: fixed;
 	bottom:0;
 	width:100%;
+	color:#fff;
+	font-size: 16px;
 }
 html { 
 	background: url(back.jpg) no-repeat center center fixed ; 
@@ -249,5 +251,7 @@ html {
 }
 
 
-
+.glyphicon-user:before {
+  content: "\e008";
+}
 
