@@ -174,7 +174,7 @@ a.drop:hover{
 	text-align: center;
 	position: fixed;
 	bottom:0;
-	width:63%;
+	width:100%;
 }
 html { 
 	background: url(back.jpg) no-repeat center center fixed ; 
