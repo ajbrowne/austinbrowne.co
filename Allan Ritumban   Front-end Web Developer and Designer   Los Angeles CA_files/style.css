@@ -1,0 +1,3708 @@
+@import url("../rachelbaker-bootstrapwp-Twitter-Bootstrap-for-WordPress-1db6763/assets/css/bootstrapwp.css");
+/*
+Theme Name:     Allan The Designer
+Theme URI:      http://allanthedesigner.com/
+Description:    Child theme for the RB BoostrapWP
+Author:         Allan
+Author URI:     http://allanthedesigner/about/
+Template:       rachelbaker-bootstrapwp-Twitter-Bootstrap-for-WordPress-1db6763                             
+Version:        0.2.0
+*/
+/*===========================================================================
+Typography
+===========================================================================*/
+.brandon-grotesque {
+  font-family: "brandon-grotesque", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+}
+/*===========================================================================
+Variables and MixIns
+===========================================================================*/
+/*===========================================================================
+Preload Content
+===========================================================================*/
+#preloader {
+  position: fixed;
+  background: #2c3e50;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+}
+#preloader #loading-container {
+  position: absolute;
+  min-width: 220px;
+  height: 205px;
+  top: 40%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  font-family: "brandon-grotesque", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0);
+  color: #FFF;
+}
+#preloader #loading-container #loading-text-content {
+  width: 155px;
+  margin: 0 auto;
+}
+#preloader #loading-container #loading-text-content #loading-text {
+  display: inline-block;
+  float: left;
+  margin-top: 205px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+#preloader #loading-container #loading-text-content .dots {
+  float: left;
+  margin-top: 205px;
+}
+#preloader #loading-container #loading-balls {
+  position: relative;
+  width: 95px;
+  margin: 0 auto;
+}
+#preloader #loading-container #loading-balls #ball-1 {
+  width: 15px;
+  height: 15px;
+  background: #e74c3c;
+  position: absolute;
+  top: 0;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-animation: bounce-1;
+  -webkit-animation-name: bounce-1;
+  animation-name: bounce-1;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce-1 {
+  0% {
+    top: 30px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    top: 125px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 30px;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce-1 {
+  0% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    top: 125px;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+}
+#preloader #loading-container #loading-balls #ball-2 {
+  width: 15px;
+  height: 15px;
+  background: #3498db;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-animation: bounce-2;
+  -webkit-animation-name: bounce-2;
+  animation-name: bounce-2;
+  -webkit-animation-duration: 2.3s;
+  animation-duration: 2.3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce-2 {
+  0% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    top: 50px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce-2 {
+  0% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+}
+#preloader #loading-container #loading-balls #ball-3 {
+  width: 15px;
+  height: 15px;
+  background: #8e44ad;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-animation: bounce-3;
+  -webkit-animation-name: bounce-3;
+  animation-name: bounce-3;
+  -webkit-animation-duration: 2.8s;
+  animation-duration: 2.8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce-3 {
+  0% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    top: 25px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce-3 {
+  0% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    top: 25px;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+}
+#preloader #loading-container #loading-balls #ball-4 {
+  width: 15px;
+  height: 15px;
+  background: #1abc9c;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-animation: bounce-4;
+  -webkit-animation-name: bounce-4;
+  animation-name: bounce-4;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce-4 {
+  0% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    top: 75px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce-4 {
+  0% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+}
+#preloader #loading-container #loading-balls #ball-5 {
+  width: 15px;
+  height: 15px;
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-animation: bounce-5;
+  -webkit-animation-name: bounce-5;
+  animation-name: bounce-5;
+  -webkit-animation-duration: 2.6s;
+  animation-duration: 2.6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce-5 {
+  0% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    top: 100px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce-5 {
+  0% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    top: 100px;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+}
+/*===========================================================================
+Global
+===========================================================================*/
+body {
+  width: 100%;
+  color: #FFF;
+  font-family: "ff-netto-web";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+body.home {
+  background: #111;
+}
+footer {
+  padding: 10px;
+}
+#main-container {
+  background: #000;
+  width: 100%;
+  min-width: 980px;
+  max-width: 1920px;
+  margin: 0px auto  0;
+  overflow: hidden;
+}
+.container {
+  min-width: 980px;
+  max-width: 1920px;
+  text-align: center;
+}
+.no-scroll {
+  overflow: hidden !important;
+}
+h2 {
+  font-size: 36px;
+  font-family: "brandon-grotesque", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  line-height: 52px;
+  text-align: center;
+}
+h3 {
+  font-size: 48px;
+  font-family: "brandon-grotesque", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 52px;
+}
+a {
+  outline: none;
+  border: none;
+  color: #FFF;
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+a:hover {
+  color: #FFF;
+}
+p {
+  text-align: left;
+}
+hr {
+  width: 95%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 10px auto 5px;
+}
+.slide {
+  min-height: 850px;
+}
+/*===========================================================================
+Navigation
+===========================================================================*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: -40px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.navbar .work-menu {
+  display: none;
+}
+.navbar .navbar-inner {
+  background: none;
+  min-width: 980px;
+  max-width: 1920px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
+.navbar .navbar-inner a.back-slide-trigger {
+  display: none;
+  padding: 10px 15px;
+}
+.navbar .navbar-inner a.back-slide-trigger:hover {
+  background: transparent !important;
+}
+.navbar .navbar-inner a.back-slide-trigger .icon-arrow-left {
+  vertical-align: baseline;
+}
+.navbar .navbar-inner .container {
+  width: 95%;
+}
+.navbar .menu-item {
+  transition: all 0.2s ease-in !important;
+  -moz-transition: all 0.2s ease-in !important;
+  -webkit-transition: all 0.2s ease-in !important;
+}
+.navbar .menu-item:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
+  color: #FFF;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/*===========================================================================
+Intro 
+===========================================================================*/
+#intro {
+  z-index: 1000;
+  min-height: 950px;
+  background: transparent url(images/bg01.jpg) 50% 30% no-repeat fixed;
+}
+#intro #intro-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1002;
+  text-align: center;
+}
+#intro #intro-container #intro-content {
+  opacity: 0;
+  margin: 140px auto 0;
+}
+#intro #intro-container #intro-content #main-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px 0 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+#intro #intro-container #intro-content #main-header #brand {
+  opacity: .75;
+  width: 200px;
+  height: 168px;
+  margin: 0 0 10px 0;
+}
+#intro #intro-container #intro-content #main-header h1 {
+  opacity: 0;
+  font-family: "brandon-grotesque";
+  font-weight: 500;
+  text-align: center;
+  font-size: 54px;
+  line-height: 1em;
+  display: inline-block;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+}
+#intro #intro-container #intro-content #main-header h1 span {
+  font-size: 50px;
+}
+#intro #intro-container #intro-content #main-header p {
+  text-align: center;
+  font-size: 24px;
+  display: block;
+}
+#intro #intro-container #intro-content #main-header p span {
+  font-weight: 300;
+}
+#intro #intro-container #scroll-down-text {
+  width: 175px;
+  background: rgba(0, 0, 0, 0.55);
+  margin: 10px auto 0;
+  padding: 5px 0;
+}
+#intro #intro-container #scroll-down-text p {
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+}
+#intro #intro-container #scroll-down-circle {
+  width: 45px;
+  height: 45px;
+  margin: 10px auto;
+  background: rgba(0, 0, 0, 0.55);
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+#intro #intro-container #scroll-down-circle i {
+  margin-top: 12px;
+}
+/*===========================================================================
+What I do
+===========================================================================*/
+#whatido {
+  min-height: 800px;
+  -webkit-box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  border-top: 5px solid #8f181e;
+  border-bottom: 5px solid #8f181e;
+  background: #eb5055;
+}
+#whatido #whatido-container {
+  width: 100%;
+  min-height: auto;
+  position: relative;
+}
+#whatido #whatido-content {
+  width: 1100px;
+  margin: 165px auto 0;
+}
+#whatido #whatido-content h2 {
+  margin-bottom: 70px;
+}
+#whatido .wdo-graphics {
+  margin: 5% auto 0;
+  width: 100%;
+  height: 200px;
+}
+#whatido .wdo-graphics .circle {
+  width: 200px;
+  height: 200px;
+  display: none;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #252525;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#whatido .wdo-graphics .circle:hover {
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+#whatido .wdo-graphics .circle .circle-inner {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  border-radius: 99px;
+}
+@-webkit-keyframes scale-hud {
+  0% {
+    -webkit-transform: scale(0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+@keyframes scale-hud {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .scale-hud {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  background: #151f27;
+  width: 200px;
+  height: 200px;
+  opacity: 0.4;
+  z-index: 1003;
+  overflow: hidden;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  border-radius: 99px;
+  -moz-animation: scale-hud;
+  -webkit-animation-name: scale-hud;
+  animation-name: scale-hud;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#whatido .wdo-graphics .circle .circle-inner .scale-hud:hover {
+  opacity: 0;
+}
+@-webkit-keyframes hud-one-opt-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hud-one-opt-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-one-opt-1 {
+  -moz-animation: hud-one-opt-1;
+  -webkit-animation-name: hud-one-opt-1;
+  animation-name: hud-one-opt-1;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@-webkit-keyframes hud-one-opt-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes hud-one-opt-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-one-opt-2 {
+  -moz-animation: hud-one-opt-2;
+  -webkit-animation-name: hud-one-opt-2;
+  animation-name: hud-one-opt-2;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-one-opt-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hud-one-opt-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-one-opt-3 {
+  -moz-animation: hud-one-opt-3;
+  -webkit-animation-name: hud-one-opt-3;
+  animation-name: hud-one-opt-3;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-two-opt-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes hud-two-opt-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-two-opt-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-two-opt-1;
+  -webkit-animation-name: hud-two-opt-1;
+  animation-name: hud-two-opt-1;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@-webkit-keyframes hud-two-opt-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes hud-two-opt-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-two-opt-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-two-opt-2;
+  -webkit-animation-name: hud-two-opt-2;
+  animation-name: hud-two-opt-2;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-two-opt-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes hud-two-opt-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-two-opt-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-two-opt-3;
+  -webkit-animation-name: hud-two-opt-3;
+  animation-name: hud-two-opt-3;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-three-opt-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hud-three-opt-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-three-opt-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-three-opt-1;
+  -webkit-animation-name: hud-three-opt-1;
+  animation-name: hud-three-opt-1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@-webkit-keyframes hud-three-opt-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hud-three-opt-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-three-opt-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-three-opt-2;
+  -webkit-animation-name: hud-three-opt-2;
+  animation-name: hud-three-opt-2;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-three-opt-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hud-three-opt-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-three-opt-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-three-opt-3;
+  -webkit-animation-name: hud-three-opt-3;
+  animation-name: hud-three-opt-3;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-one-opt-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes hud-one-opt-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-one-opt-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-one-opt-4;
+  -webkit-animation-name: hud-one-opt-4;
+  animation-name: hud-one-opt-4;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-two-opt-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hud-two-opt-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-two-opt-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation: hud-two-opt-4;
+  -webkit-animation-name: hud-two-opt-4;
+  animation-name: hud-two-opt-4;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+@-webkit-keyframes hud-three-opt-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hud-three-opt-4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#whatido .wdo-graphics .circle .circle-inner .hud-three-opt-4 {
+  top: 0;
+  left: 0;
+  -moz-animation: hud-three-opt-4;
+  -webkit-animation-name: hud-three-opt-4;
+  animation-name: hud-three-opt-4;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+#whatido .wdo-graphics .wdo-content {
+  display: none;
+}
+#whatido .wdo-graphics #ux-graphic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+@-webkit-keyframes pencil {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@keyframes pencil {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+#whatido .wdo-graphics #design #pencil-graphic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -27px;
+  margin-left: -75px;
+  -moz-animation: pencil;
+  -webkit-animation-name: pencil;
+  animation-name: pencil;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+#whatido .wdo-graphics #code-graphic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+#whatido .wdo-graphics #responsive-graphic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -56px;
+  margin-left: -70px;
+}
+#whatido .wdo-graphics .whatido-desc {
+  display: none;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 50px;
+}
+#whatido .wdo-graphics .whatido-desc-phone {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/*===========================================================================
+My Work
+===========================================================================*/
+#work {
+  background: #2c3e50 url(images/bg02.jpg) 50% 30% no-repeat fixed;
+}
+#work #work-container {
+  width: 100%;
+  position: relative;
+  z-index: 1003;
+}
+#work #work-content {
+  width: 1200px;
+  margin: 100px auto 0;
+  min-height: 200px;
+}
+#work #work-content h2 {
+  margin-bottom: 60px;
+}
+#work .work-sample-container {
+  margin: 40px auto 0;
+}
+#work .work-sample-container .row-fluid {
+  padding: 0 0 2em 0;
+}
+#work .work-sample-container .row-fluid .span3 .work-sample {
+  position: relative;
+  opacity: 0;
+  width: 100%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-1 {
+  background: rgba(255, 255, 255, 0.8);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-1:before {
+  background: url('images/work-logos.png') center 0;
+  background-size: 212px auto;
+  width: 212px;
+  height: 44px;
+  margin-top: -22px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-1:hover:after {
+  background: #ffffff;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-2 {
+  background: rgba(59, 143, 181, 0.5);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-2:before {
+  background: url('images/work-logos.png') center -47px;
+  background-size: 212px auto;
+  width: 212px;
+  height: 55px;
+  margin-top: -28px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-2:hover:after {
+  background: #3b8fb5;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-3 {
+  background: rgba(52, 73, 94, 0.5);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-3:before {
+  background: url('images/work-logos.png') center -105px;
+  background-size: 212px auto;
+  width: 212px;
+  height: 45px;
+  margin-top: -23px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-3:hover:after {
+  background: #34495e;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-4 {
+  background: rgba(0, 0, 0, 0.5);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-4:before {
+  background: url('images/work-logos.png') center -154px;
+  background-size: 212px auto;
+  width: 212px;
+  height: 97px;
+  margin-top: -49px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-4:hover:after {
+  background: #000000;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-5 {
+  background: rgba(25, 58, 103, 0.5);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-5:before {
+  background: url('images/work-logos.png') center -255px;
+  background-size: 212px auto;
+  width: 212px;
+  height: 28px;
+  margin-top: -14px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-5:hover:after {
+  background: #193a67;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-6 {
+  background: rgba(226, 30, 38, 0.5);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-6:before {
+  background: url('images/work-logos.png') center -282px;
+  background-size: 212px auto;
+  width: 212px;
+  height: 42px;
+  margin-top: -21px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-6:hover:after {
+  background: #e21e26;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-7 {
+  background: rgba(89, 152, 179, 0.5);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-7:before {
+  background: url('images/work-logos.png') center -325px;
+  background-size: 212px auto;
+  width: 212px;
+  height: 51px;
+  margin-top: -25px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-7:hover:after {
+  background: #5998b3;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-8 {
+  background: rgba(236, 240, 241, 0.5);
+}
+#work .work-sample-container .row-fluid .span3 .work-box-8:before {
+  background: url('images/work-logos.png') center -375px;
+  background-size: 212px auto;
+  width: 212px;
+  height: 43px;
+  margin-top: -22px;
+  margin-left: -106px;
+}
+#work .work-sample-container .row-fluid .span3 .work-box-8:hover:after {
+  background: #ecf0f1;
+}
+#work .work-sample-container .row-fluid .span3 .slide-trigger {
+  height: 203px;
+  font-size: 0px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  margin: 0 auto;
+  z-index: 1003;
+  position: relative;
+}
+#work .work-sample-container .row-fluid .span3 .slide-trigger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+#work .work-sample-container .row-fluid .span3 .slide-trigger:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 203px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #fff;
+  opacity: 0;
+  transition: transfrom 800ms, opacity 800ms;
+  -moz-transition: transfrom 800ms, opacity 800ms;
+  -webkit-transition: transfrom 800ms, opacity 800ms;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#work .work-sample-container .row-fluid .span3 .slide-trigger:hover:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+#work .work-sample-container .row-fluid .span3 .mobile-trigger {
+  height: 203px;
+  font-size: 0px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  margin: 0 auto;
+  z-index: 1003;
+  position: relative;
+  display: block;
+}
+#work .work-sample-container .row-fluid .span3 .mobile-trigger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+#work .work-sample-container .row-fluid .span3 .mobile-trigger:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 203px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #fff;
+  opacity: 0;
+  transition: transfrom 800ms, opacity 800ms;
+  -moz-transition: transfrom 800ms, opacity 800ms;
+  -webkit-transition: transfrom 800ms, opacity 800ms;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#work .work-sample-container .row-fluid .span3 .mobile-trigger:hover:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+#work .work-sample-container .row-fluid .span3 img {
+  width: 90%;
+  opacity: .9;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5%;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+#work .work-sample-container .row-fluid .span3 img:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+#work .work-sample-container .row-fluid .span3 .scale-now {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#work .work-sample-container .row-fluid:nth-child(2) {
+  padding: 0;
+}
+.sample-work-container {
+  width: 1250px;
+  padding: 100px 0 0;
+  color: #111111;
+  text-align: left;
+  margin: 0 auto;
+}
+.sample-work-container a {
+  color: #111111;
+}
+.sample-work-container a:hover {
+  color: #111111;
+}
+.sample-work-container .sample-description h3 {
+  margin-bottom: 10px;
+}
+.sample-work-container .sample-description .main-menu-back {
+  float: none;
+  text-align: center;
+}
+.sample-work-container .sample-description .main-menu-back a {
+  float: none;
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.work-slide {
+  opacity: 0;
+  position: absolute;
+  color: #111;
+  width: 100%;
+  top: 0;
+  right: -1920px;
+  z-index: 1050;
+  background: #FFF;
+  z-index: 1004;
+  transition: right 800ms, opacity 800ms;
+  -moz-transition: right 800ms, opacity 800ms;
+  -webkit-transition: right 800ms, opacity 800ms;
+}
+.work-slide .work-gallery {
+  position: relative;
+  padding-left: 50px;
+}
+.work-slide .flexslider {
+  max-width: 90%;
+  height: 50%;
+  overflow: hidden;
+  margin: 95px auto 0;
+}
+.work-slide .flexslider .flex-direction-nav a {
+  margin: 0;
+  color: #c2c2c2;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.work-slide .flexslider .flex-direction-nav a:hover {
+  text-decoration: none;
+  opacity: .75;
+}
+.mfp-wrap .white-popup {
+  position: relative;
+  background: red;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  z-index: 1005;
+}
+#cover-black {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 1002;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.slide-in {
+  opacity: 1 !important;
+  top: 0;
+  right: 0;
+}
+.slide-hide {
+  display: none !important;
+}
+/*===========================================================================
+About me
+===========================================================================*/
+#aboutme {
+  border-top: 5px solid #1e2c39;
+  border-bottom: 5px solid #1e2c39;
+  -webkit-box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -3px 2px rgba(0, 0, 0, 0.25);
+  background: #043d5d;
+}
+#aboutme .row-fluid {
+  padding: 0 0 0 0;
+}
+#aboutme #aboutme-container {
+  width: 100%;
+  padding: 0 0 0 0;
+  position: relative;
+}
+#aboutme #aboutme-container #aboutme-content {
+  width: 1200px;
+  height: 700px;
+  margin: 100px auto 0;
+}
+#aboutme #aboutme-container #aboutme-descp-container {
+  position: relative;
+}
+#aboutme #aboutme-container #aboutme-descp-container #aboutme-descp {
+  position: absolute;
+  width: 550px;
+  top: -202px;
+  left: 0;
+  opacity: 0;
+}
+#aboutme #aboutme-container #image-container {
+  position: relative;
+}
+#aboutme #aboutme-container #image-container #sample-image {
+  position: absolute;
+  left: -125px;
+  width: 500px;
+  opacity: 0;
+  background: #FFF;
+}
+#aboutme #aboutme-container #image-container #sample-image img {
+  border: 5px solid #FFF;
+}
+/*===========================================================================
+Contact 
+===========================================================================*/
+#contact {
+  background: #111111 url(images/bg03.jpg) 50% 30% no-repeat fixed;
+}
+#contact #contact-container {
+  width: 100%;
+  position: relative;
+}
+#contact #contact-container #contact-content {
+  width: 1200px;
+  height: 750px;
+  margin: 90px auto 0;
+  text-align: left;
+}
+#contact #contact-container .row-fluid {
+  padding: 0 0 2em 0;
+}
+#contact #contact-container #contact-form {
+  width: 0%;
+  padding: 0 0 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+#contact #contact-container #contact-form input {
+  width: 0%;
+  height: 0px;
+  padding: 0;
+}
+#contact #contact-container #contact-form textarea {
+  width: 90%;
+  resize: none;
+}
+#contact #contact-container #contact-form .wpcf7-not-valid {
+  background: rgba(197, 5, 5, 0.7) !important;
+  color: #FFF !important;
+}
+#contact #contact-container #contact-form p {
+  text-align: center;
+  display: none;
+}
+#contact #contact-container #contact-form p .wpcf7-form-control {
+  width: 0px;
+  height: 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#contact #contact-container #contact-form p .wpcf7-form-control-animate {
+  width: 90%;
+  opacity: 1;
+  padding: 4px 6px;
+}
+#contact #contact-container #contact-form input[type="submit"] {
+  width: 90%;
+  border: none;
+  background: #31587e;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFF;
+  border-bottom: 5px solid #23303e;
+  transition: all 0.2s ease-in !important;
+  -moz-transition: all 0.2s ease-in !important;
+  -webkit-transition: all 0.2s ease-in !important;
+}
+#contact #contact-container #contact-form input[type="submit"]:hover {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+  background: #3b6996;
+}
+#contact #contact-container #contact-form input[type="submit"]:active {
+  background: #34495e;
+}
+#contact #contact-container #contact-form .ajax-loader {
+  display: none;
+}
+#contact #contact-container .wpcf7-validation-errors {
+  text-align: center;
+  border-color: #FFF;
+  margin: 3em 0.5em 1em;
+}
+#contact #contact-container .wpcf7-mail-sent-ok {
+  text-align: center;
+  margin: 3em 0.5em 1em;
+}
+#contact #cntct-dsc-cotainer {
+  position: relative;
+}
+#contact #cntct-dsc-cotainer #cntct-dsc {
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  width: 550px;
+}
+#contact #cntct-dsc-cotainer p {
+  width: 500px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.7em;
+  margin: 120px auto 0;
+}
+/*===========================================================================
+Blog
+===========================================================================*/
+body.blog {
+  background: #FFF;
+  color: #111;
+}
+/*===========  Media Queries  =============*/
+/*===========================================================================
+Variables and MixIns
+===========================================================================*/
+/*=================================================================================================
+Global Width 480px and below
+=================================================================================================*/
+@media (max-width: 480px) {
+  body {
+    background: #111;
+    padding: 0 0 0 0;
+    font-size: 16px;
+  }
+  #main-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 1em;
+  }
+  .slide {
+    min-height: 100px;
+  }
+  /*===========================================================================
+  Navigation Width 480px and below
+  ===========================================================================*/
+  .navbar {
+    display: none;
+    margin: 0 0 0 0 !important;
+  }
+  .navbar .navbar-inner {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .navbar .navbar-inner .container {
+    width: 100%;
+  }
+  /*===========================================================================
+  Intro Width 480px and below
+  ===========================================================================*/
+  #intro {
+    background: transparent url(images/bg01-480.jpg) no-repeat;
+    background-position: center 10% !important;
+    min-height: 500px;
+  }
+  #intro #intro-container #intro-content {
+    margin: 50px auto 0;
+  }
+  #intro #intro-container #intro-content #main-header {
+    width: 85%;
+    min-width: 300px;
+    padding: 30px 5% 15px;
+  }
+  #intro #intro-container #intro-content #main-header h1 {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1em;
+    text-align: center;
+    text-shadow: none;
+    margin: 0;
+  }
+  #intro #intro-container #intro-content #main-header h1 span {
+    font-size: 28px;
+  }
+  #intro #intro-container #intro-content #main-header p {
+    font-size: 18px;
+    text-shadow: 0px 0px 3px #000001;
+    text-align: center;
+    text-shadow: none;
+    line-height: 1.5em;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  #intro #intro-container #scroll-down-text {
+    width: 150px;
+    margin: 20px auto 0;
+  }
+  #intro #intro-container #scroll-down-text p {
+    font-size: 14px;
+    margin: 0;
+  }
+  /*===========================================================================
+  What I do Width 480px and below
+  ===========================================================================*/
+  #whatido {
+    min-height: 300px;
+  }
+  #whatido #whatido-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 0 30px 0;
+  }
+  #whatido #whatido-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 60px 0 0 0;
+  }
+  #whatido #whatido-content h2 {
+    margin-bottom: 20px;
+  }
+  #whatido .wdo-graphics {
+    height: auto;
+  }
+  #whatido .wdo-graphics .circle {
+    width: 130px;
+    height: auto;
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+  #whatido .wdo-graphics .circle .circle-inner {
+    width: 130px;
+    height: 130px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud {
+    width: 130px;
+    height: 130px;
+    margin-top: -65px;
+    margin-left: -65px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud img {
+    width: 130px;
+    height: 130px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud-fadeout {
+    opacity: 0 !important;
+  }
+  #whatido .wdo-graphics .whatido-desc {
+    margin-top: 0;
+    font-size: 21px;
+  }
+  #whatido .wdo-graphics .wdo-content {
+    display: block;
+  }
+  #whatido .wdo-graphics #design #pencil-graphic {
+    width: 100px;
+    height: 39px;
+    margin-top: -19px;
+    margin-left: -50px;
+  }
+  #whatido .wdo-graphics #code-graphic {
+    width: 75px;
+    height: 74px;
+    margin-top: -38px;
+    margin-left: -38px;
+  }
+  #whatido .wdo-graphics #ux-graphic {
+    width: 75px;
+    height: 75px;
+    margin-top: -38px;
+    margin-left: -38px;
+  }
+  #whatido .wdo-graphics #responsive-graphic {
+    width: 75px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -38px;
+  }
+  #whatido .span3 {
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
+  /*===========================================================================
+  My Work Width 480px and below
+  ===========================================================================*/
+  #work {
+    background: transparent url(images/bg02-480.jpg) repeat;
+    background-position: center 0 !important;
+    padding: 0 0 2em 0;
+  }
+  #work #work-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    padding: 45px 0 30px 0;
+  }
+  #work #work-content h2 {
+    margin-bottom: 10px;
+  }
+  #work #work-content .work-sample-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #work #work-content .work-sample-container .row-fluid {
+    padding: 0 0 0 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 .work-sample {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    padding: 15px 0px;
+  }
+  #work #work-content .work-sample-container .work-box-1:before {
+    background-position: center 0;
+    background-size: 130px auto;
+    width: 130px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .work-box-2:before {
+    background-position: center -30px;
+    background-size: 130px auto;
+    width: 130px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .work-box-3:before {
+    background-position: center -64px;
+    background-size: 130px auto;
+    width: 130px;
+    height: 27px;
+    margin-top: -14px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .work-box-4:before {
+    background-position: center -96px;
+    background-size: 130px auto;
+    width: 130px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .work-box-5:before {
+    background-position: center -155px;
+    background-size: 130px auto;
+    width: 130px;
+    height: 18px;
+    margin-top: -9px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .work-box-6:before {
+    background-position: center -175px;
+    background-size: 130px auto;
+    width: 130px;
+    height: 22px;
+    margin-top: -11px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .work-box-7:before {
+    background-position: center -198px;
+    background-size: 130px auto;
+    width: 130px;
+    height: 32px;
+    margin-top: -16px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .work-box-8:before {
+    background-position: center -228px;
+    background-size: 130px auto;
+    width: 130px;
+    height: 28px;
+    margin-top: -14px;
+    margin-left: -65px;
+  }
+  #work #work-content .work-sample-container .mobile-trigger {
+    min-width: 130px;
+    height: 140px;
+  }
+  #work #work-content .work-sample-container .mobile-trigger:after {
+    height: 140px;
+  }
+  #work .sample-work-container {
+    padding: 3% 5% 0;
+  }
+  #work .work-slide {
+    padding: 0 0 55px 0;
+  }
+  #work .work-slide .work-gallery {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+  #work .work-slide .flexslider {
+    max-width: 450px;
+    height: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a {
+    margin: -25px 0 0;
+    font-size: 1em;
+    opacity: 0.3;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a:hover {
+    opacity: .75;
+  }
+  #work .work-slide div[class*="span"] {
+    width: 100%;
+  }
+  #work .work-slide h3,
+  #work .work-slide p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+  }
+  #work .work-slide h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  #work .work-slide p {
+    font-size: 16px;
+  }
+  #work .work-slide img {
+    width: 100%;
+    height: auto;
+  }
+  #work .span3 {
+    float: left;
+    width: 50%;
+  }
+  /*===========================================================================
+  About me Width 480px and below
+  ===========================================================================*/
+  #aboutme #aboutme-container {
+    min-height: 300px;
+  }
+  #aboutme #aboutme-container .row-fluid {
+    padding: 0 0 .5em 0;
+  }
+  #aboutme #aboutme-container #aboutme-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 30px 0;
+  }
+  #aboutme #aboutme-container #aboutme-content h2 {
+    margin-bottom: 20px;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container {
+    float: left;
+    width: 100%;
+    padding: 2% 0;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp {
+    position: static;
+    top: auto;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp p {
+    text-align: justify;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container .aboutme-descp-static {
+    position: static !important;
+    top: auto !important;
+  }
+  #aboutme #aboutme-container #image-container {
+    width: 85%;
+    margin: 0 auto;
+    float: none;
+  }
+  #aboutme #aboutme-container #image-container #sample-image {
+    position: static;
+    left: auto;
+    width: 100%;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #image-container .sample-image-static {
+    position: static !important;
+    left: auto !important;
+  }
+  /*===========================================================================
+  Contact Width 480px and below
+  ===========================================================================*/
+  #contact {
+    background: transparent url(images/bg03-480.jpg) no-repeat;
+    background-position: center 10% !important;
+  }
+  #contact #contact-container #contact-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 10% auto;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 {
+    width: 100%;
+    margin: 0;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 #contact-form {
+    width: 85% !important;
+    float: none;
+    margin: 0 auto;
+  }
+}
+/*=================================================================================================
+Global Width 480px to 979px
+=================================================================================================*/
+@media (min-width: 481px) and (max-width: 979px) {
+  body {
+    background: #111;
+    padding: 0 0 0 0;
+    font-size: 16px;
+  }
+  #main-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  /*===========================================================================
+  Navigation Width 480px to 979px
+  ===========================================================================*/
+  .navbar {
+    margin: 0 0 0 0 !important;
+  }
+  .navbar .navbar-inner {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .navbar .navbar-inner a.back-slide-trigger {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .navbar-inner a.back-slide-trigger .icon-arrow-left {
+    vertical-align: baseline;
+  }
+  .navbar .navbar-inner .container {
+    width: 100%;
+  }
+  .navbar .navbar-inner .container .nav-collapse {
+    overflow: visible;
+  }
+  .navbar .navbar-inner .container .nav-collapse .nav {
+    margin: 0 0 5px;
+  }
+  .navbar .navbar-inner .container .nav-collapse .nav > li {
+    display: inline;
+    float: left;
+  }
+  .navbar .navbar-inner .container .nav-collapse .nav > li a {
+    display: inline;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .navbar .btn-navbar {
+    display: none;
+  }
+  /*===========================================================================
+  Intro Width 480px to 979px
+  ===========================================================================*/
+  #intro {
+    background: transparent url(images/bg01.jpg) no-repeat;
+    background-position: center 10% !important;
+  }
+  #intro #intro-container #intro-content #main-header {
+    width: 75%;
+    min-width: 400px;
+    padding: 40px 2.5% 15px;
+  }
+  #intro #intro-container #intro-content #main-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0 ;
+  }
+  #intro #intro-container #intro-content #main-header p {
+    font-size: 18px;
+  }
+  /*===========================================================================
+  What I do Width 480px to 979px
+  ===========================================================================*/
+  #whatido #whatido-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 0 30px 0;
+  }
+  #whatido #whatido-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #whatido #whatido-content h2 {
+    margin-bottom: 0px;
+  }
+  #whatido .wdo-graphics {
+    height: auto;
+  }
+  #whatido .wdo-graphics .circle {
+    width: 200px;
+    height: auto;
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+  #whatido .wdo-graphics .scale-hud-fadeout {
+    opacity: 0 !important;
+  }
+  #whatido .wdo-graphics .whatido-desc {
+    margin-top: 0;
+    font-size: 21px;
+  }
+  #whatido .wdo-graphics .wdo-content {
+    display: block;
+  }
+  #whatido .span3 {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  /*===========================================================================
+  My Work Width 480px to 979px
+  ===========================================================================*/
+  #work {
+    background: transparent url(images/bg02.jpg) repeat;
+    background-position: center 0 !important;
+    padding: 0 0 2em 0;
+  }
+  #work #work-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #work #work-content .work-sample-container {
+    margin: 5% auto 0;
+    width: 100%;
+  }
+  #work #work-content .work-sample-container .row-fluid {
+    padding: 0 0 0 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 {
+    width: 50%;
+    float: left;
+    margin: 0 0 15px 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 .work-sample {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #work .sample-work-container {
+    padding: 8% 5% 0;
+  }
+  #work .work-slide .work-gallery {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+  #work .work-slide .flexslider {
+    max-width: 450px;
+    height: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a {
+    margin: -25px 0 0;
+    font-size: 1em;
+    opacity: 0.3;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a:hover {
+    opacity: .75;
+  }
+  #work .work-slide div[class*="span"] {
+    width: 100%;
+  }
+  #work .work-slide h3,
+  #work .work-slide p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+  }
+  #work .work-slide h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  #work .work-slide p {
+    font-size: 16px;
+  }
+  #work .work-slide img {
+    width: 100%;
+    height: auto;
+  }
+  /*===========================================================================
+  About me Width 480px to 979px
+  ===========================================================================*/
+  #aboutme #aboutme-container {
+    min-height: 300px;
+  }
+  #aboutme #aboutme-container .row-fluid {
+    padding: 0 0 .5em 0;
+  }
+  #aboutme #aboutme-container #aboutme-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container {
+    width: 100%;
+    padding: 30px 0;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp {
+    position: static;
+    top: auto;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp p {
+    text-align: justify;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container .aboutme-descp-static {
+    position: static !important;
+    top: auto !important;
+  }
+  #aboutme #aboutme-container #image-container {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  #aboutme #aboutme-container #image-container #sample-image {
+    position: static;
+    left: auto;
+    opacity: 1;
+    margin: 0 auto;
+  }
+  #aboutme #aboutme-container #image-container .sample-image-static {
+    position: static !important;
+    left: auto !important;
+  }
+  /*===========================================================================
+  Contact Width 480px to 979px
+  ===========================================================================*/
+  #contact {
+    background: transparent url(images/bg03.jpg) no-repeat;
+    background-position: center 10% !important;
+    height: 800px;
+  }
+  #contact #contact-container #contact-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #contact #contact-container #contact-content h2 {
+    margin-bottom: 0;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 {
+    width: 100%;
+    margin: 0;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 #contact-form {
+    width: 70% !important;
+    float: none;
+    margin: 0 auto;
+  }
+}
+/*===========  Media Queries  =============*/
+/*=================================================================================================
+Global Width 320px to 568px (iPhone: Portrait)
+=================================================================================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  body {
+    background: #111;
+    padding: 0 0 0 0;
+    font-size: 16px;
+  }
+  #main-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 1em;
+  }
+  .slide {
+    min-height: 100px;
+  }
+  /*===========================================================================
+  Navigation 320px to 568px (iPhone: Portrait)
+  ===========================================================================*/
+  .navbar {
+    display: none;
+    margin: 0 0 0 0 !important;
+  }
+  .navbar .navbar-inner {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .navbar .navbar-inner .container {
+    width: 100%;
+  }
+  /*===========================================================================
+  Intro Width 320px to 568px (iPhone: Portrait)
+  ===========================================================================*/
+  #intro {
+    background: transparent url(images/bg01-480.jpg) no-repeat;
+    background-position: center 10% !important;
+  }
+  #intro #intro-container #intro-content {
+    margin: 50px auto 0;
+  }
+  #intro #intro-container #intro-content #main-header {
+    width: 85%;
+    min-width: 100px;
+    padding: 30px 5% 15px;
+  }
+  #intro #intro-container #intro-content #main-header #brand {
+    width: 150px;
+    height: 126px;
+  }
+  #intro #intro-container #intro-content #main-header h1 {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 1em;
+    text-align: center;
+    text-shadow: none;
+    margin: 0;
+  }
+  #intro #intro-container #intro-content #main-header h1 span {
+    font-size: 28px;
+  }
+  #intro #intro-container #intro-content #main-header p {
+    font-size: 18px;
+    text-shadow: 0px 0px 3px #000001;
+    text-align: center;
+    text-shadow: none;
+    line-height: 1.5em;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  #intro #intro-container #scroll-down-text {
+    width: 150px;
+    margin: 20px auto 0;
+  }
+  #intro #intro-container #scroll-down-text p {
+    font-size: 14px;
+    margin: 0;
+  }
+  /*===========================================================================
+  What I do Width 320px to 568px (iPhone: Portrait)
+  ===========================================================================*/
+  #whatido {
+    margin: 0 auto;
+  }
+  #whatido #whatido-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+  }
+  #whatido #whatido-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0 0;
+    padding: 30px 0 0;
+  }
+  #whatido #whatido-content h2 {
+    font-size: 2.8em;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+  }
+  #whatido .wdo-graphics {
+    height: auto;
+    margin: 0 auto;
+  }
+  #whatido .wdo-graphics .circle {
+    width: 120px;
+    height: auto;
+    float: none;
+    margin: 5% auto 5px;
+    display: block;
+  }
+  #whatido .wdo-graphics .circle .circle-inner {
+    width: 120px;
+    height: 120px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud {
+    display: none;
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud img {
+    width: 120px;
+    height: 120px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud-fadeout {
+    opacity: 0 !important;
+  }
+  #whatido .wdo-graphics .whatido-desc {
+    margin-top: 0;
+    font-size: 21px;
+    display: none !important;
+  }
+  #whatido .wdo-graphics .wdo-content {
+    display: block;
+  }
+  #whatido .wdo-graphics #design #pencil-graphic {
+    width: 100px;
+    height: 39px;
+    margin-top: -19px;
+    margin-left: -50px;
+  }
+  #whatido .wdo-graphics #code-graphic {
+    width: 75px;
+    height: 74px;
+    margin-top: -38px;
+    margin-left: -38px;
+  }
+  #whatido .wdo-graphics #ux-graphic {
+    width: 75px;
+    height: 75px;
+    margin-top: -38px;
+    margin-left: -38px;
+  }
+  #whatido .wdo-graphics #responsive-graphic {
+    width: 75px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -38px;
+  }
+  #whatido .span3 {
+    float: left;
+    margin: 0;
+  }
+  /*===========================================================================
+  My Work Width 320px to 568px (iPhone: Portrait)
+  ===========================================================================*/
+  #work {
+    background: #111111;
+    background-position: center 10% !important;
+    padding: 0 0 0 0;
+  }
+  #work #work-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  #work #work-content h2 {
+    margin-bottom: 15px;
+  }
+  #work #work-content .work-sample-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #work #work-content .work-sample-container .row-fluid {
+    padding: 0 0 0 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 .work-sample {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    padding: 0 0 10px;
+  }
+  #work .sample-work-container {
+    padding: 3% 5% 0;
+  }
+  #work .work-slide {
+    padding: 0 0 55px 0;
+  }
+  #work .work-slide .work-gallery {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+  #work .work-slide .flexslider {
+    max-width: 450px;
+    height: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a {
+    margin: -25px 0 0;
+    font-size: 1em;
+    opacity: 0.3;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a:hover {
+    opacity: .75;
+  }
+  #work .work-slide div[class*="span"] {
+    width: 100%;
+  }
+  #work .work-slide h3,
+  #work .work-slide p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+  }
+  #work .work-slide h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  #work .work-slide p {
+    font-size: 16px;
+  }
+  #work .work-slide img {
+    width: 100%;
+    height: auto;
+  }
+  #work .span3 {
+    float: left;
+    width: 50%;
+  }
+  /*===========================================================================
+  About me Width 320px to 568px (iPhone: Portrait)
+  ===========================================================================*/
+  #aboutme #aboutme-container {
+    min-height: 300px;
+  }
+  #aboutme #aboutme-container .row-fluid {
+    padding: 0 0 .5em 0;
+  }
+  #aboutme #aboutme-container #aboutme-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 30px 0;
+  }
+  #aboutme #aboutme-container #aboutme-content h2 {
+    margin-bottom: 0px;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container {
+    float: left;
+    width: 100%;
+    padding: 2% 0;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp {
+    position: static;
+    top: auto;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp p {
+    text-align: justify;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container .aboutme-descp-static {
+    position: static !important;
+    top: auto !important;
+  }
+  #aboutme #aboutme-container #image-container {
+    width: 85%;
+    margin: 0 auto;
+    float: none;
+  }
+  #aboutme #aboutme-container #image-container #sample-image {
+    position: static;
+    left: auto;
+    width: 100%;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #image-container .sample-image-static {
+    position: static !important;
+    left: auto !important;
+  }
+  /*===========================================================================
+  Contact Width 320px to 568px (iPhone: Portrait)
+  ===========================================================================*/
+  #contact {
+    background: transparent url(images/bg03-320.jpg) no-repeat;
+    background-position: center 10% !important;
+    height: 700px;
+  }
+  #contact #contact-container #contact-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0% auto;
+    padding: 30px 0;
+  }
+  #contact #contact-container #contact-content h2 {
+    font-size: 2.8em;
+    font-size: 28px;
+    margin: 10px 0 20px;
+  }
+  #contact #contact-container #contact-content .row-fluid {
+    padding: 0;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 {
+    width: 100%;
+    margin: 0;
+  }
+  #contact #contact-container #contact-content #contact-form {
+    float: none;
+    width: 85% !important;
+    height: 490px;
+    padding: 30px 2.5%;
+    margin: 0 auto;
+  }
+  #contact #contact-container #contact-content #contact-form input {
+    width: 90%;
+    opacity: 1;
+    padding: 4px 6px;
+  }
+  #contact #contact-container #contact-content #contact-form textarea {
+    opacity: 1;
+    width: 90%;
+    height: 165px;
+    resize: none;
+  }
+  #contact #contact-container #contact-content #contact-form p {
+    display: block;
+  }
+}
+/*===========  Media Queries  =============*/
+/*=================================================================================================
+Global Width 320px to 568px (iPhone: Landscape)
+=================================================================================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  body {
+    background: #111;
+    padding: 0 0 0 0;
+    font-size: 16px;
+  }
+  #main-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 1em;
+  }
+  .slide {
+    min-height: 100px;
+  }
+  /*===========================================================================
+  Navigation 320px to 568px (iPhone: Landscape)
+  ===========================================================================*/
+  .navbar {
+    display: none;
+    margin: 0 0 0 0 !important;
+  }
+  .navbar .navbar-inner {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .navbar .navbar-inner .container {
+    width: 100%;
+  }
+  /*===========================================================================
+  Intro Width 320px to 568px (iPhone: Landscape)
+  ===========================================================================*/
+  #intro {
+    background: transparent url(images/bg01-480.jpg) no-repeat;
+    background-position: center 0 !important;
+    background-size: 100% auto;
+    height: 300px;
+    min-height: 300px;
+  }
+  #intro #intro-container {
+    height: 852px;
+  }
+  #intro #intro-container #intro-content {
+    width: 100%;
+    padding: 0;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+  #intro #intro-container #intro-content #main-header {
+    min-width: 100%;
+    padding: 0;
+  }
+  #intro #intro-container #intro-content #main-header #brand {
+    width: 150px;
+    height: 126px;
+    margin: 20px auto 10px;
+  }
+  #intro #intro-container #intro-content #main-header h1 {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 1em;
+    text-align: center;
+    text-shadow: none;
+    margin: 0;
+  }
+  #intro #intro-container #intro-content #main-header p {
+    font-size: 14px;
+    text-align: center;
+    text-shadow: none;
+    line-height: 1.5em;
+    padding: 0;
+    margin-bottom: 0px;
+  }
+  #intro #intro-container #intro-content #main-header p i {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  #intro #intro-container #intro-content #scroll-down-circle {
+    width: 150px;
+    margin: 0 auto;
+  }
+  /*===========================================================================
+  What I do Width 320px to 568px (iPhone: Landscape)
+  ===========================================================================*/
+  #whatido {
+    min-height: 400px;
+  }
+  #whatido #whatido-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+  }
+  #whatido #whatido-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    padding: 30px 0;
+  }
+  #whatido #whatido-content h2 {
+    margin: 0;
+  }
+  #whatido .wdo-graphics {
+    height: auto;
+    margin: 0 auto;
+  }
+  #whatido .wdo-graphics .circle {
+    width: 150px;
+    height: auto;
+    float: none;
+    margin: 5% auto 0;
+    display: block;
+  }
+  #whatido .wdo-graphics .circle .circle-inner {
+    width: 150px;
+    height: 150px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud {
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud img {
+    width: 150px;
+    height: 150px;
+  }
+  #whatido .wdo-graphics .circle .circle-inner .scale-hud-fadeout {
+    opacity: 0 !important;
+  }
+  #whatido .wdo-graphics .whatido-desc {
+    margin-top: 0;
+    font-size: 21px;
+  }
+  #whatido .wdo-graphics .wdo-content {
+    display: block;
+  }
+  #whatido .wdo-graphics #design #pencil-graphic {
+    width: 100px;
+    height: 39px;
+    margin-top: -19px;
+    margin-left: -50px;
+  }
+  #whatido .wdo-graphics #code-graphic {
+    width: 75px;
+    height: 74px;
+    margin-top: -38px;
+    margin-left: -38px;
+  }
+  #whatido .wdo-graphics #ux-graphic {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+  #whatido .wdo-graphics #responsive-graphic {
+    width: 100px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -50px;
+  }
+  #whatido .span3 {
+    float: left;
+    margin: 0;
+  }
+  /*===========================================================================
+  My Work Width 320px to 568px (iPhone: Landscape)
+  ===========================================================================*/
+  #work {
+    background: #111111;
+    background-position: center 10% !important;
+    padding: 0 0 30px 0;
+  }
+  #work #work-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  #work #work-content h2 {
+    margin-bottom: 15px;
+  }
+  #work #work-content .work-sample-container {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #work #work-content .work-sample-container .row-fluid {
+    padding: 0 0 0 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 .work-sample {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    padding: 0 0 10px;
+  }
+  #work .sample-work-container {
+    padding: 3% 5% 0;
+  }
+  #work .work-slide {
+    padding: 0 0 55px 0;
+  }
+  #work .work-slide .work-gallery {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+  #work .work-slide .flexslider {
+    max-width: 450px;
+    height: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a {
+    margin: -25px 0 0;
+    font-size: 1em;
+    opacity: 0.3;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a:hover {
+    opacity: .75;
+  }
+  #work .work-slide div[class*="span"] {
+    width: 100%;
+  }
+  #work .work-slide h3,
+  #work .work-slide p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+  }
+  #work .work-slide h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  #work .work-slide p {
+    font-size: 16px;
+  }
+  #work .work-slide img {
+    width: 100%;
+    height: auto;
+  }
+  #work .span3 {
+    float: left;
+    width: 50%;
+  }
+  /*===========================================================================
+  About me Width 320px to 568px (iPhone: Landscape)
+  ===========================================================================*/
+  #aboutme #aboutme-container {
+    height: auto;
+  }
+  #aboutme #aboutme-container .row-fluid {
+    padding: 0 0 .5em 0;
+  }
+  #aboutme #aboutme-container #aboutme-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    padding: 30px 0;
+  }
+  #aboutme #aboutme-container #aboutme-content h2 {
+    margin-bottom: 0;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container {
+    float: left;
+    width: 100%;
+    padding: 2% 0;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp {
+    position: static;
+    top: auto;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp p {
+    text-align: justify;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container .aboutme-descp-static {
+    position: static !important;
+    top: auto !important;
+  }
+  #aboutme #aboutme-container #image-container {
+    width: 85%;
+    margin: 0 auto;
+    float: none;
+  }
+  #aboutme #aboutme-container #image-container #sample-image {
+    position: static;
+    left: auto;
+    width: 100%;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #image-container .sample-image-static {
+    position: static !important;
+    left: auto !important;
+  }
+  /*===========================================================================
+  Contact Width 320px to 568px (iPhone: Landscape)
+  ===========================================================================*/
+  #contact {
+    height: auto;
+    background: transparent url(images/bg03-320.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 0 !important;
+  }
+  #contact #contact-container #contact-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0% auto;
+    padding: 40px 0;
+  }
+  #contact #contact-container #contact-content h2 {
+    font-size: 28px;
+    margin: 10px 0 20px;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 {
+    width: 100%;
+    margin: 0;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 #contact-form {
+    width: 85% !important;
+    float: none;
+    margin: 0 auto;
+  }
+  #contact #contact-container #contact-content #contact-form {
+    height: 490px;
+    padding: 30px 2.5%;
+    width: 85%;
+  }
+  #contact #contact-container #contact-content #contact-form input {
+    width: 90%;
+    opacity: 1;
+    padding: 4px 6px;
+  }
+  #contact #contact-container #contact-content #contact-form textarea {
+    opacity: 1;
+    width: 90%;
+    height: 165px;
+    resize: none;
+  }
+  #contact #contact-container #contact-content #contact-form p {
+    display: block;
+  }
+  #contact #contact-container .row-fluid {
+    padding: 0;
+  }
+}
+/*=================================================================================================
+Global Width 768px to 1024px (iPad: Landscape)
+=================================================================================================*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  body {
+    background: #111;
+    padding: 0 0 0 0;
+    font-size: 16px;
+  }
+  #main-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .hidden-tablet {
+    display: none !important;
+  }
+  .slide {
+    min-height: 100px;
+  }
+  /*===========================================================================
+  Navigation Width 768px to 1024px (iPad: Landscape)
+  ===========================================================================*/
+  .navbar {
+    margin: 0 0 0 0 !important;
+  }
+  .navbar .navbar-inner {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .navbar .navbar-inner .container {
+    width: 100%;
+  }
+  /*===========================================================================
+  Intro Width Width 768px to 1024px (iPad: Landscape)
+  ===========================================================================*/
+  #intro {
+    background: transparent url(images/bg01.jpg) no-repeat;
+    background-position: center 10% !important;
+  }
+  #intro #intro-container #intro-content #main-header {
+    width: 75%;
+    min-width: 400px;
+    padding: 40px 2.5% 15px;
+  }
+  #intro #intro-container #intro-content #main-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0 ;
+  }
+  #intro #intro-container #intro-content #main-header p {
+    font-size: 24px;
+  }
+  #intro #intro-container #scroll-down-text {
+    width: 250px;
+    margin: 20px auto 0;
+  }
+  #intro #intro-container #scroll-down-text p {
+    font-size: 24px;
+    margin: 0;
+  }
+  /*===========================================================================
+  What I do Width 768px to 1024px (iPad: Landscape)
+  ===========================================================================*/
+  #whatido #whatido-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 0 30px 0;
+  }
+  #whatido #whatido-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #whatido #whatido-content h2 {
+    margin-bottom: 0px;
+  }
+  #whatido .wdo-graphics {
+    height: auto;
+  }
+  #whatido .wdo-graphics .circle {
+    width: 200px;
+    height: auto;
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+  #whatido .wdo-graphics .scale-hud-fadeout {
+    opacity: 0 !important;
+  }
+  #whatido .wdo-graphics .whatido-desc-phone {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  #whatido .wdo-graphics .wdo-content {
+    display: block;
+  }
+  #whatido .span3 {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  #whatido .hidden-tablet {
+    display: none !important;
+  }
+  #whatido .hidden-desktop {
+    display: block !important;
+  }
+  /*===========================================================================
+  My Work Width 768px to 1024px (iPad: Landscape)
+  ===========================================================================*/
+  #work {
+    background: transparent url(images/bg02.jpg) repeat;
+    background-position: center 0 !important;
+    padding: 75px 0;
+  }
+  #work #work-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+  }
+  #work #work-content .work-sample-container {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #work #work-content .work-sample-container .row-fluid {
+    padding: 0 0 0 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 {
+    width: 50%;
+    float: left;
+    margin: 0 0 15px 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 .work-sample {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  #work .sample-work-container {
+    padding: 8% 5% 0;
+  }
+  #work .work-slide .work-gallery {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+  #work .work-slide .flexslider {
+    max-width: 450px;
+    height: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a {
+    margin: -25px 0 0;
+    font-size: 1em;
+    opacity: 0.3;
+  }
+  #work .work-slide .flexslider .flex-direction-nav a:hover {
+    opacity: .75;
+  }
+  #work .work-slide div[class*="span"] {
+    width: 100%;
+  }
+  #work .work-slide h3,
+  #work .work-slide p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+  }
+  #work .work-slide h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  #work .work-slide p {
+    font-size: 16px;
+  }
+  #work .work-slide img {
+    width: 100%;
+    height: auto;
+  }
+  /*===========================================================================
+  About me Width 768px to 1024px (iPad: Landscape)
+  ===========================================================================*/
+  #aboutme #aboutme-container .row-fluid {
+    padding: 0 0 0 0;
+  }
+  #aboutme #aboutme-container #aboutme-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    padding: 75px 0;
+    margin: 0;
+  }
+  #aboutme #aboutme-container #aboutme-content h2 {
+    margin-bottom: 20px;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container {
+    float: left;
+    width: 100%;
+    padding: 2% 0;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp {
+    position: static;
+    top: auto;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp p {
+    text-align: justify;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container .aboutme-descp-static {
+    position: static !important;
+    top: auto !important;
+  }
+  #aboutme #aboutme-container #image-container {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  #aboutme #aboutme-container #image-container #sample-image {
+    position: static;
+    left: auto;
+    opacity: 1;
+    margin: 0 auto;
+  }
+  #aboutme #aboutme-container #image-container .sample-image-static {
+    position: static !important;
+    left: auto !important;
+  }
+  /*===========================================================================
+  Contact Width 768px to 1024px (iPad: Landscape)
+  ===========================================================================*/
+  #contact {
+    background: transparent url(images/bg03.jpg) no-repeat;
+    background-position: center 10% !important;
+  }
+  #contact #contact-container #contact-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 10% auto;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 {
+    width: 100%;
+    margin: 0;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 #contact-form {
+    width: 70% !important;
+    height: 490px;
+    padding: 30px 2.5%;
+    float: none;
+    margin: 0 auto;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 #contact-form input {
+    width: 90%;
+    opacity: 1;
+    padding: 4px 6px;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 #contact-form textarea {
+    opacity: 1;
+    width: 90%;
+    height: 165px;
+    resize: none;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 #contact-form p {
+    display: block;
+  }
+  #contact #contact-container #contact-form {
+    height: 490px;
+    padding: 30px 2.5%;
+    width: 85%;
+  }
+  #contact #contact-dsc-row {
+    display: none !important;
+  }
+}
+/*=================================================================================================
+Global Width 768px to 1024px (iPad: Portrait)
+=================================================================================================*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    background: #111;
+    padding: 0 0 0 0;
+    font-size: 16px;
+  }
+  #main-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .slide {
+    min-height: 100px;
+  }
+  /*===========================================================================
+  Navigation Width 768px to 1024px (iPad: Portrait)
+  ===========================================================================*/
+  .navbar {
+    margin: 0 0 0 0 !important;
+  }
+  .navbar .navbar-inner {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .navbar .navbar-inner .container {
+    width: 100%;
+  }
+  /*===========================================================================
+  Intro Width 768px to 1024px (iPad: Portrait)
+  ===========================================================================*/
+  #intro {
+    background: transparent url(images/bg01.jpg) no-repeat;
+    background-position: center 10% !important;
+  }
+  #intro #intro-container #intro-content #main-header {
+    width: 75%;
+    min-width: 400px;
+    padding: 40px 2.5% 15px;
+  }
+  #intro #intro-container #intro-content #main-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0 ;
+  }
+  #intro #intro-container #intro-content #main-header p {
+    font-size: 18px;
+  }
+  /*===========================================================================
+  What I do Width 768px to 1024px (iPad: Portrait)
+  ===========================================================================*/
+  #whatido #whatido-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 0 30px 0;
+  }
+  #whatido #whatido-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #whatido #whatido-content h2 {
+    margin-bottom: 0px;
+  }
+  #whatido .wdo-graphics {
+    height: auto;
+  }
+  #whatido .wdo-graphics .circle {
+    width: 200px;
+    height: auto;
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+  #whatido .wdo-graphics .scale-hud-fadeout {
+    opacity: 0 !important;
+  }
+  #whatido .wdo-graphics .whatido-desc {
+    margin-top: 0;
+    font-size: 21px;
+  }
+  #whatido .wdo-graphics .wdo-content {
+    display: block;
+  }
+  #whatido .wdo-graphics .whatido-desc-phone {
+    font-size: 21px;
+  }
+  #whatido .whatido-desc-container {
+    display: none;
+  }
+  #whatido .span3 {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  /*===========================================================================
+  My Work Width 768px to 1024px (iPad: Portrait)
+  ===========================================================================*/
+  #work {
+    background: transparent url(images/bg02.jpg) repeat;
+    background-position: center 0 !important;
+    padding: 0 0 2em 0;
+  }
+  #work #work-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #work #work-content .work-sample-container {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #work #work-content .work-sample-container .row-fluid {
+    padding: 0 0 0 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 {
+    width: 50%;
+    float: left;
+    margin: 0 0 15px 0;
+  }
+  #work #work-content .work-sample-container .row-fluid .span3 .work-sample {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    padding: 15px 0;
+  }
+  #work .sample-work-container {
+    padding: 19% 5% 0;
+  }
+  #work .work-slide .work-gallery {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+  #work .work-slide .flexslider {
+    max-width: 450px;
+    height: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #work .work-slide div[class*="span"] {
+    width: 100%;
+  }
+  #work .work-slide h3,
+  #work .work-slide p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+  }
+  #work .work-slide h3 {
+    font-size: 36px;
+    font-size: 3.0vmax;
+    text-align: center;
+  }
+  #work .work-slide p {
+    font-size: 16px;
+    font-size: 1.6vmax;
+  }
+  #work .work-slide img {
+    width: 100%;
+    height: auto;
+  }
+  /*===========================================================================
+  About me Width 768px to 1024px (iPad: Portrait)
+  ===========================================================================*/
+  #aboutme #aboutme-container {
+    min-height: 300px;
+  }
+  #aboutme #aboutme-container .row-fluid {
+    padding: 0 0 .5em 0;
+  }
+  #aboutme #aboutme-container #aboutme-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container {
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp {
+    position: static;
+    top: auto;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 1;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container #aboutme-descp p {
+    text-align: justify;
+  }
+  #aboutme #aboutme-container #aboutme-content #aboutme-descp-container .aboutme-descp-static {
+    position: static !important;
+    top: auto !important;
+  }
+  #aboutme #aboutme-container #image-container {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  #aboutme #aboutme-container #image-container #sample-image {
+    position: static;
+    left: auto;
+    opacity: 1;
+    margin: 0 auto;
+  }
+  #aboutme #aboutme-container #image-container .sample-image-static {
+    position: static !important;
+    left: auto !important;
+  }
+  /*===========================================================================
+  Contact Width 768px to 1024px (iPad: Portrait)
+  ===========================================================================*/
+  #contact {
+    background: transparent url(images/bg03.jpg) no-repeat;
+    background-position: center 10% !important;
+    height: 800px;
+  }
+  #contact #contact-container #contact-content {
+    width: auto;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 0;
+    padding: 55px 0 40px;
+  }
+  #contact #contact-container #contact-content h2 {
+    margin-bottom: 0;
+  }
+  #contact #contact-container #contact-content .row-fluid .span6 {
+    width: 100%;
+    margin: 0;
+  }
+  #contact #contact-container #contact-content #contact-form {
+    width: 70% !important;
+    height: 490px;
+    padding: 30px 2.5%;
+    float: none;
+    margin: 0 auto;
+  }
+  #contact #contact-container #contact-content #contact-form input {
+    width: 90%;
+    opacity: 1;
+    padding: 4px 6px;
+  }
+  #contact #contact-container #contact-content #contact-form textarea {
+    opacity: 1;
+    width: 90%;
+    height: 165px;
+    resize: none;
+  }
+  #contact #contact-container #contact-content #contact-form p {
+    display: block;
+  }
+}
+/*===========================================================================
+Retina Backgrounds 320px (iPhone: Portrait)
+===========================================================================*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 320px) and (orientation: portrait), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 320px) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 320px) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (max-width: 320px) and (orientation: portrait), only screen and (min-resolution: 192dpi) and (max-width: 320px) and (orientation: portrait), only screen and (min-resolution: 2dppx) and (max-width: 320px) and (orientation: portrait) {
+  #intro {
+    background: transparent url(images/bg01-x2.jpg) no-repeat;
+    background-size: 320px auto;
+  }
+  #work {
+    background: transparent url(images/bg02-x2.jpg) repeat;
+    background-size: 320px auto;
+    background-position: center 0 !important;
+  }
+  #contact {
+    background: transparent url(images/bg03-x2.jpg) no-repeat;
+    background-size: auto 100%;
+  }
+}
+/*===========================================================================
+Retina Backgrounds 320px (iPhone: Landscape)
+===========================================================================*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 570px) and (orientation: landscape), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 570px) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 570px) and (orientation: landscape), only screen and (min-device-pixel-ratio: 2) and (max-width: 570px) and (orientation: landscape), only screen and (min-resolution: 192dpi) and (max-width: 570px) and (orientation: landscape), only screen and (min-resolution: 2dppx) and (max-width: 570px) and (orientation: landscape) {
+  #intro {
+    background: transparent url(images/bg01-480-landscape-x2.jpg) no-repeat;
+    background-size: 100% auto;
+  }
+  #work {
+    background: transparent url(images/bg02-480-landscape-x2.jpg) repeat;
+    background-size: 480px auto;
+    background-position: center 0 !important;
+  }
+  #contact {
+    background: transparent url(images/bg03-480-landscape-x2.jpg) no-repeat;
+    background-size: 600px 100%;
+  }
+}
