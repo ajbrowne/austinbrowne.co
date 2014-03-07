@@ -1,5 +1,5 @@
 body{
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Helvetica;
 	padding:0;
 	margin:0;
 	display: block;
@@ -13,16 +13,16 @@ ul{
 a.bar{
 	display:block;
 	color: #ccc;
-	font-size: 12px;
+	font-size: 15px;
 	text-decoration:none;
-	padding:10px 10px 10px 20px;
+	padding:20px 20px 20px 20px;
 	text-transform:uppercase;
 }
 a.bar:hover{
 	color:#fff;
 }
 a.drop:hover{
-	color:#fff;
+	color:#000;
 }
 #active{
 	color:#fff;
@@ -31,16 +31,16 @@ a.drop:hover{
 }
 .nav-container{
 	width: 100%;
+	text-align: center;
 }
 
 .main-body{
 	margin-right: auto;
 	margin-left: auto;
 	text-align: :center;
-	height: 300px;
+	height: 175px;
 	width: 1200px;
 	padding-top: 5px;
-	margin-top: 70px;
 	/*background-color: rgba(255,255,255,1);*/
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -52,7 +52,7 @@ a.drop:hover{
 	text-align: :center;
 	height: 300px;
 	width: 1200px;
-	padding-top: 5px;
+	padding-top: 25px;
 	color:white;
 	text-shadow: 2px 2px black;
 	/*background-color: rgba(255,255,255,1);*/
@@ -83,7 +83,8 @@ a.drop:hover{
 	text-align: center;
 	font-size: 70px;
 	color: #fff;
-	text-shadow: 2px 2px black;
+	text-shadow: 10px 10px black;
+	font-family: 'Revalia', cursive;
 }
 #sub-text{
 	padding-left: 55px;
@@ -253,8 +254,10 @@ html {
 }
 .nav-container ul ul a {
 	line-height: 150%;
-	padding: 16px 20px; 
-	color:#ccc;
+	padding: 9px 20px; 
+	color:#2a2a2a;
+	background-color: #fff;
+	font-size: 13px;
 }
 .nav-container ul ul li {
 	position: relative;
