@@ -1,5 +1,5 @@
 body{
-	font-family:Helvetica;
+	font-family: 'Alef', sans-serif;
 	padding:0;
 	margin:0;
 	display: block;
@@ -17,6 +17,7 @@ a.bar{
 	text-decoration:none;
 	padding:20px 20px 20px 20px;
 	text-transform:uppercase;
+	font-family:Helvetica;
 }
 a.bar:hover{
 	color:#fff;
@@ -32,6 +33,7 @@ a.drop:hover{
 .nav-container{
 	width: 100%;
 	text-align: center;
+	font-family:Helvetica;
 }
 
 .main-body{
@@ -84,7 +86,7 @@ a.drop:hover{
 	font-size: 70px;
 	color: #fff;
 	text-shadow: 10px 10px black;
-	font-family: 'Revalia', cursive;
+	font-family: 'Audiowide', cursive;
 }
 #sub-text{
 	padding-left: 55px;
@@ -169,11 +171,13 @@ a.drop:hover{
 	font-size:30px;
 	text-shadow: 2px 2px black;
 	color:white;
+	font-family: 'Alef', sans-serif;
 }
 #about-txt{
 	line-height:1.4;
 	text-shadow: 2px 2px black;
 	color:white;
+	font-family: 'Alef', sans-serif;
 }
 #foot{
 	text-align: center;
